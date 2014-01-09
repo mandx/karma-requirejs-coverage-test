@@ -28,6 +28,10 @@ module.exports = function (grunt) {
                     // test results reporter to use
                     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
                     reporters: ['progress', 'coverage'],
+
+                    // We need 'coverage' both in `reporters` and `preprocessors`
+                    // The coverage data will be stored into the "coverage/" folder
+                    // both in HTML and JSON format
                     preprocessors: { 'src/*.js': ['coverage'] },
 
                     // enable / disable colors in the output (reporters and logs)
@@ -48,6 +52,7 @@ module.exports = function (grunt) {
                     // - Safari (only Mac)
                     // - PhantomJS
                     // - IE (only Windows)
+                    // PhantomJS appears to be used even if not listed here
                     browsers: ['Chrome'],
 
                     // If browser does not capture in given timeout [ms], kill it

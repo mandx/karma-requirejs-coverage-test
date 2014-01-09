@@ -25,4 +25,4 @@ Done, without errors.
 
 ```
 
-Now check the code/config and make it your own!
+Now check the code/config (specially `Gruntfile.js` and `test/test-main.js`) and make it your own!
